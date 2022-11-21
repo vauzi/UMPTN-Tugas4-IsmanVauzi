@@ -2,9 +2,10 @@ const nav = document.getElementById('nav-link');
 const navi = document.getElementById('navbar');
 
 function toggle() {
-  //   nav.classList.toggle('translate-x-44');
+  nav.classList.toggle('translate-x-full');
   nav.classList.toggle('opacity-0');
   navi.classList.add('bg-gray-600');
+  navi.classList.add('px-5');
 }
 
 window.addEventListener('scroll', () => {
