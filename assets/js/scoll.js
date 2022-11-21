@@ -4,7 +4,7 @@ const navi = document.getElementById('navbar');
 function toggle() {
   //   nav.classList.toggle('translate-x-44');
   nav.classList.toggle('opacity-0');
-  navi.classList.toggle('bg-gray-600');
+  navi.classList.add('bg-gray-600');
 }
 
 window.addEventListener('scroll', () => {
