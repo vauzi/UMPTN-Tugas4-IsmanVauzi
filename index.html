@@ -15,8 +15,9 @@
 
 <body class="bg-[#EFF2F1]">
     <section id="header" class="fixed w-full pt-[36px] lg:bg-transparent z-50 px-3 lg:px-0">
-        <nav
-            class="navbar container mx-auto lg:flex items-center justify-between font-inter py-[25px] rounded-3xl bg-gray-600 lg:bg-transparent relative lg:static gap-[200px] duration-1000">
+        <nav id="navbar"
+            class="navbar container mx-auto lg:flex items-center justify-between font-inter py-[25px] rounded-full relative lg:static duration-500">
+
             <div class="flex justify-between">
                 <h1 class="font-medium text-[32px] leading-[39px] text-white">Furni</h1>
                 <button class="text-white lg:hidden" type="button" onclick="toggle()">
@@ -28,8 +29,10 @@
 
                 </button>
             </div>
+
             <div id="nav-link"
-                class="absolute lg:static lg:flex items-center font-medium text-base leading-[19px] gap-[87px] bg-gray-600 lg:bg-transparent w-full left-0 pb-8 lg:pb-0 rounded-b-3xl translate-x-44 opacity-0 lg:-translate-y-0 transform transition-all duration-300 lg:opacity-100">
+                class="absolute right-0 lg:static lg:flex items-center gap-[87px] bg-gray-600 lg:bg-transparent left-0 pb-8 lg:pb-0 rounded-b-3xl opacity-0 transform transition-all duration-300 lg:opacity-100">
+
                 <ul class="lg:flex items-center gap-11 text-opacity-50 text-center lg:text-start">
                     <li class="pb-5 lg:pb-0 pt-3 lg:pt-0">
                         <a href="" class="border-b-4 border-orange-400 pb-[7px] text-white">
@@ -77,7 +80,9 @@
                         </svg>
                     </a>
                 </div>
+
             </div>
+
         </nav>
     </section>
 
@@ -103,11 +108,16 @@
             </div>
 
             <!-- image hero content -->
-            <figure class="w-[700px]">
-                <img src="./assets/img/hero1.png" class="w-full" alt="imgess">
-            </figure>
 
-        </div>
+            <div class="w-[700px] z-20 relative">
+                <figure class="w-full">
+                    <img src="./assets/img/hero1.png" class="w-full" alt="imgess">
+                </figure>
+                <figure class="absolute right-0 top-16 -z-10">
+                    <img src="./assets/img/vector/Dotted2.png" alt="imgess">
+                </figure>
+
+            </div>
     </section>
 
     <section id="product" class="pt-[116px]">
@@ -159,10 +169,10 @@
                     <div class="hover:-translate-y-20 duration-300">
                         <img src="./assets/img/product/product-2.png" alt="">
                         <p class="font-semibold text-base leading-6 mt-11">
-                            Nordik CHAIR
+                            Kruzo Aero Chair
                         </p>
                         <p class="font-bold text-lg leading-6">
-                            $50.000
+                            $78.000
                         </p>
                         <div
                             class="absolute w-full h-[500px] flex justify-center -bottom-32 opacity-0 hover:opacity-100">
@@ -182,10 +192,10 @@
                     <div class="hover:-translate-y-20 duration-300">
                         <img src="./assets/img/product/product-3.png" alt="">
                         <p class="font-semibold text-base leading-6 mt-12">
-                            Nordik CHAIR
+                            Ergonomic Chair
                         </p>
                         <p class="font-bold text-lg leading-6">
-                            $50.000
+                            $43.000
                         </p>
                         <div
                             class="absolute w-full h-[500px] flex justify-center -bottom-32 opacity-0 hover:opacity-100">
@@ -351,6 +361,64 @@
                 </div>
             </div>
         </div>
+    </section>
+
+    <section id="product-description" class="pt-[174px] pb-[95px]">
+        <div id="card" class="container mx-auto flex flex-wrap justify-center md:justify-between gap-[49px]">
+
+            <div class="flex gap-9 relative">
+                <figure class="w-[98px] h-[98px] bg-[#35736E] rounded-lg bg-opacity-10">
+                    <img src="./assets/img/product/product-1.png" class="w-[91px] -mt-5" alt="">
+                </figure>
+                <div id="desc" class="font-inter flex flex-col gap-[11px] w-[211px]">
+                    <h3 class="font-bold text-sm leading-[22px] text-black">
+                        Nordic Chair
+                    </h3>
+                    <p class="font-normal text-sm leading-[22px] text-[#6A6A6A]">
+                        Donec mattis porta eros, aliquet finibus risus in. Donecd
+                    </p>
+                    <p class="font-bold text-sm leading-[22px text-[#6A6A6A] hover:text-blue-500">
+                        Read more
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex gap-9 relative">
+                <figure class="w-[98px] h-[98px] bg-[#35736E] rounded-lg bg-opacity-10">
+                    <img src="./assets/img/product/product-2.png" class="w-[91px] -mt-5" alt="">
+                </figure>
+                <div id="desc" class="font-inter flex flex-col gap-[11px] w-[211px]">
+                    <h3 class="font-bold text-sm leading-[22px] text-black">
+                        Kruzi Aero
+                    </h3>
+                    <p class="font-normal text-sm leading-[22px] text-[#6A6A6A]">
+                        Donec mattis porta eros, aliquet finibus risus in. Donecd
+                    </p>
+                    <p class="font-bold text-sm leading-[22px text-[#6A6A6A] hover:text-blue-500">
+                        Read more
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex gap-9 relative">
+                <figure class="w-[98px] h-[98px] bg-[#35736E] rounded-lg bg-opacity-10">
+                    <img src="./assets/img/product/product-3.png" class="w-[91px] -mt-5" alt="">
+                </figure>
+                <div id="desc" class="font-inter flex flex-col gap-[11px] w-[211px]">
+                    <h3 class="font-bold text-sm leading-[22px] text-black">
+                        Ergonomic Chair
+                    </h3>
+                    <p class="font-normal text-sm leading-[22px] text-[#6A6A6A]">
+                        Donec mattis porta eros, aliquet finibus risus in. Donecd
+                    </p>
+                    <p class="font-bold text-sm leading-[22px text-[#6A6A6A] hover:text-blue-500">
+                        Read more
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
     </section>
 
     <script src="./assets/js/scoll.js"></script>
